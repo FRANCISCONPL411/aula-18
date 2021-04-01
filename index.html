@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formatação e tag</title>
+		<meta charset="utf-8"/>
+		<script type="text/javascript">
+			function mostravalor(componente){
+				var valor = componente.getAttribute('data-idade');
+				alert (valor);			
+			}
+		</script>
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+	
+	</head>
+	<body>
+		<div>
+			<ul>
+				<li class="pessoa" onclick="mostravalor(this)" cpf="999.999.999-99" data-idade="20">João</li>
+				<li class="pessoa" onclick="mostravalor(this)" cpf="888.888.888-88" data-idade="30">José</li>
+				<li class="pessoa" onclick="mostravalor(this)" cpf="777.777.777-77"data-idade="40">Maria</li>			
+			</ul>
+		</div>
+
+	</body>
+</html>

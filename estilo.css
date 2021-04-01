@@ -1,0 +1,15 @@
+.pessoa{
+				color: red;
+			}
+			.pessoa[data-idade="30"]{
+				color: blue;
+			}
+			.pessoa[data-idade="40"]{
+				color: green;
+			}
+			.pessoa::before{
+				content: 'Nome: ';
+			}
+			.pessoa::after{
+				content: ' - Idade: ' attr(data-idade)  ' - CPF: ' attr(cpf);
+			}
